@@ -34,3 +34,6 @@
 .fulfilled .fulfilled-symbol:after {
   content: "\2713";
 }
+#submitBtn:disabled {
+  cursor: not-allowed
+}

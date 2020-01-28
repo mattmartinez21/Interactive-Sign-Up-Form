@@ -46,6 +46,10 @@ const checkValidity = () => {
     el.classList.remove("fulfilled");
     el.classList.add("unfulfilled");
   });
+
+  if (fulfilled.length === 6)
+    document.getElementById("submitBtn").disabled = false;
+  else document.getElementById("submitBtn").disabled = true;
 };
 
 Array.from(document.getElementsByClassName("input-listener")).forEach(input => {
